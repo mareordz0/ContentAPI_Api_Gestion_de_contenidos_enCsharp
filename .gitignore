@@ -1,0 +1,14 @@
+# Dependencias y binarios
+bin/
+obj/
+.vs/
+.vscode/
+*.user
+*.suo
+*.cache
+*.log
+packages/
+appsettings.Development.json
+
+# Entity Framework migrations (si no quieres versionarlas)
+Migrations/

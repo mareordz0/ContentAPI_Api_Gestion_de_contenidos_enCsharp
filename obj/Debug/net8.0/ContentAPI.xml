@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ContentAPI</name>
+    </assembly>
+    <members>
+        <member name="M:ContentAPI.Controllers.ContenidoController.GetContenidos">
+            <summary>
+            Obtiene todos los contenidos almacenados.
+            </summary>
+            <returns>Una lista de contenidos.</returns>
+        </member>
+        <member name="M:ContentAPI.Controllers.ContenidoController.PostContenido(ContentAPI.Models.Contenido)">
+            <summary>
+            Crea un nuevo contenido.
+            </summary>
+            <param name="contenido">Datos del contenido a crear.</param>
+            <returns>El contenido recién creado.</returns>
+            <response code="201">Devuelve el contenido creado.</response>
+            <response code="400">Si los datos son inválidos.</response>
+        </member>
+        <member name="M:ContentAPI.Controllers.ContenidoController.PutContenido(System.Int32,ContentAPI.Models.Contenido)">
+            <summary>
+            Actualiza un contenido existente.
+            </summary>
+            <param name="id">ID del contenido a actualizar.</param>
+            <param name="contenido">Datos actualizados del contenido.</param>
+            <response code="204">Actualización exitosa.</response>
+            <response code="400">ID no coincide con el contenido.</response>
+            <response code="404">Contenido no encontrado.</response>
+        </member>
+        <member name="M:ContentAPI.Controllers.ContenidoController.DeleteContenido(System.Int32)">
+            <summary>
+            Elimina un contenido por su ID.
+            </summary>
+            <param name="id">ID del contenido a eliminar.</param>
+            <response code="204">Eliminación exitosa.</response>
+            <response code="404">Contenido no encontrado.</response>
+        </member>
+        <member name="T:ContentAPI.Migrations.InitialCreate">
+            <inheritdoc />
+        </member>
+        <member name="M:ContentAPI.Migrations.InitialCreate.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:ContentAPI.Migrations.InitialCreate.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:ContentAPI.Migrations.InitialCreate.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>
